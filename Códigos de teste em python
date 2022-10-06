@@ -6,3 +6,8 @@ print (f"seu nome é {nome}")
 a = 10
 # Variável: nome. Tipo: String. Tamanho: depende do nome: Valor: nome inserido
 # Variável: a. Tipo: int. Tamanho: 1: Valor: 10
+print('{0} com {1}'.format('café','açucar'))
+# café com açucar
+
+print('{1} com {0}'.format('café','açucar'))
+# açucar com café

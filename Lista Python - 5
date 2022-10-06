@@ -1,0 +1,4 @@
+#Conversor metros - cm
+met = int(input("Digite um valor em metros\n"))
+cent = met*100
+print (f"{met}m é igual a {cent}cm")

@@ -1,0 +1,9 @@
+# Teste if python
+nome = input("Qual seu nome?\n")
+idade = int(input("Quantos anos você tem?\n"))
+if nome == "Geraldo" and idade >= 60:
+    print (f"APROVADO. Seu nome é {nome} e você tem {idade} anos")
+elif nome == "Geraldo" and idade <60:
+    print (f"NEGADO. Seu nome é {nome}, mas você não tem pelo menos 60 anos")
+else:
+    print(f"NEGADO. Seu nome não é Geraldo e você não tem mais de 60 anos\n")

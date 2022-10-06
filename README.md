@@ -20,3 +20,7 @@ This is my README, so, i will tell you some facts about me!
 https://github.com/VykDMorais/VykDMorais
 https://github.com/VykDMorais/CEFET-s-integrated-mechatronics---C-Programming
 https://github.com/VykDMorais/CEFET-s-integrated-mechatronics---Python-Programming
+
+### Some sources:
+C Programming:
+Python Programming: file:///C:/Users/Aluno/Downloads/Apostila_Allan_Python.pdf

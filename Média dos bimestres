@@ -1,0 +1,7 @@
+a = int(input("Digite a primeira nota\n"))
+b = int(input("Digite a segunda nota\n"))
+c = int(input("Digite a terceira nota\n"))
+d = int(input("Digite a última nota\n"))
+
+media = (a+b+c+d)/4
+print (f"A média das 4 notas é: {media}")

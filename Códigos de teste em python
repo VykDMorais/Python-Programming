@@ -1,0 +1,8 @@
+# Códigos de teste em python
+print ("A função print não precisa da importação de nenhuma biblioteca específica\n")
+nome = input ("Qual seu nome?\n")
+print ("seu nome é %s"%nome)
+print (f"seu nome é {nome}")
+a = 10
+# Variável: nome. Tipo: String. Tamanho: depende do nome: Valor: nome inserido
+# Variável: a. Tipo: int. Tamanho: 1: Valor: 10

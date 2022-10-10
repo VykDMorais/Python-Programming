@@ -1,0 +1,4 @@
+#Conversor de temperatura
+fah = float(input("Qual é a temperatura, em graus Fahrenheit?\n"))
+cel = 5* ((fah - 32)/9)
+print (f"{fah}ºF é igual a {cel}ºC")

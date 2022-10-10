@@ -1,0 +1,3 @@
+raio = float(input("Qual o raio do círculo, em cm?\n"))
+area = 3.14*(raio*raio)
+print (f"\nA área do círculo de raio {raio}cm é: {area}cm²")

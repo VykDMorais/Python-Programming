@@ -1,0 +1,9 @@
+ganho = float(input("Quanto você ganha por hora?\n"))
+horas = float(input("Quantas horas você trabalha por dia?\n"))
+dias = float(input("Quantos dias por semana você trabalha?\n"))
+mes = int(input ("Quantos dias tem o mês a ser calculado?\n"))
+if horas >= 0 and horas <= 24 and dias >= 0 and dias <= 7 and mes >= 28 and mes <= 31:
+    total = ganho*horas*dias*mes
+    print (f"Nesse mês, seu salário é de {total} reais\n")
+else:
+    print ("Erro, algum parâmetro digitado está fora dos valores\n")

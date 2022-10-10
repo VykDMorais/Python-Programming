@@ -1,0 +1,8 @@
+#Calculadora multa por quilo excedente de peixe
+peso = float(input("João, quantos quilos de peixe você trouxe?\n"))
+excedente = peso-50
+if excedente > 0:
+    multa = excedente*4
+    print (f"João, você terá que pagar {multa} reais de multa pelos {excedente} quilos de peixe excedentes")
+else:
+    print("João, não houve excedentes, logo, você não precisa pagar multa")

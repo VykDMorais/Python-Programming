@@ -1,0 +1,7 @@
+pri = int(input("Digite um inteiro\n"))
+seg = int(input("Digite outro inteiro\n"))
+real = float(input("Digite um número real\n"))
+a = (2*pri)*(seg/2)
+b = (3*pri) + real
+c = real*real*real
+print (f"Os valores são: a = {a}\n b = {b}\n c = {c}")

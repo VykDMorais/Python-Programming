@@ -1,0 +1,17 @@
+ganho = float(input("Quanto você ganha por hora?\n"))
+horas = float(input("Quantas horas você trabalha por dia?\n"))
+dias = float(input("Quantos dias por semana você trabalha?\n"))
+mes = int(input ("Quantos dias tem o mês a ser calculado?\n"))
+if horas >= 0 and horas <= 24 and dias >= 0 and dias <= 7 and mes >= 28 and mes <= 31:
+    total = ganho*horas*dias*mes
+    imposto = total*0.11
+    inss = total*0.08
+    sindicato = total*0.05
+    liquido = total-imposto-inss-sindicato
+    print (f"Nesse mês, seu salário bruto é de {total} reais\n")
+    print (f"Nesse mês, você tem que pagar {imposto} reais de imposto de renda\n")
+    print (f"Nesse mês, você tem que pagar {inss} reais ao INSS\n")
+    print (f"Nesse mês,você tem que pagar {sindicato} reais ao sindicato\n")
+    print (f"Nesse mês, seu salário líquido é de {liquido} reais\n")
+else:
+    print ("Erro, algum parâmetro digitado está fora dos valores\n")

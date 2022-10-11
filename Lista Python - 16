@@ -1,0 +1,8 @@
+area = float(input("Qual a área a ser pintada, em m²?\n"))
+litro = area/3
+if litro <18:
+    print (f"Para pintar {area} m², é necessário 1 lata de tinta. O preço é de: 80 reais")
+else:
+    lata = int(litro/18)
+    preco = lata*80
+    print (f"Para pintar {area} m², é necessário {lata} latas de tinta. O preço é de: {preco} reais")

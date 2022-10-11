@@ -1,0 +1,5 @@
+tamanho = float(input("Qual o tamamno do download, em MB?\n"))
+net = float(input("Qual sua velocidade de internet, em Mbps?\n")) 
+converte = tamanho*8
+tempo = round((converte/net)/60)
+print (f"Para baixar um arquivo de {tamanho} MB, com uma internet de {net}Mbps, vai demorar {tempo} minutos")

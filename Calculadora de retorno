@@ -1,0 +1,8 @@
+print ("Considerando a corrida pré-estabelecida de 6km a 7min12s por km e 4km a 8min15s por km\n")
+h = float(input("Qual hora você sai de casa?\n"))
+m = float(input("Qual minuto que você sai de casa?\n"))
+inicial = (h*3600) + (m*60)
+calculo = (((8*60)+15)*4) + (((7*60)+12)*6)
+hora = int((inicial + calculo)/3600)
+minuto = int(((inicial + calculo)%3600)/60)
+print (f"Você vai voltar para casa a:\n{hora}h{minuto}min")

@@ -1,0 +1,17 @@
+area = float(input("Qual a área a ser pintada, em m²?\n"))
+litro = area/6
+lata = round((litro/18)+0.5)
+galao = round((litro/3.6)+0.5)
+precog = galao*25
+precol = lata*80
+folga = litro*1.1
+lata_folga = round((folga/18)+0.5)
+galao_folga = round((litro/3.6)+0.5)
+precog_folga = galao_folga*25
+precol_folga = lata_folga*80
+normaliza_tinta = round(((lata_folga*18) - folga)/3.6)
+normaliza_precog = normaliza_tinta*25
+normaliza_pfinal = normaliza_precog + precol_folga
+print (f"Você precisa de {lata} latas, o que custa {precol}reais\n")
+print (f"Você precisa de {galao} galões, o que custa {precog}reais\n")
+print (f"Você precisa de {lata_folga} latas e {normaliza_tinta} galões, o que custa {normaliza_pfinal}reais\n")

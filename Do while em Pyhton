@@ -1,0 +1,19 @@
+"""ola, isso serve para comenar em bloco
+hehe"""
+while (True):
+    sexo = input("Qual seu sexo? [M para homens, F para mulheres, N para não especificado]\n")
+    if sexo == 'N' or sexo == 'F' or sexo == 'M':
+        break
+h = float(input("Informe a altura\n"))
+if h >= 0.5 and h <=2.2:
+    if sexo == 'M':
+        p = (72.7*h) - 58
+        print ("O peso ideal para você é: %.2fkg."%p)
+    elif sexo == 'F':
+        p = (62.1*h) - 44.7
+        print ("O peso ideal para você é: %.2fkg."%p)
+    else:
+        p = (68*h) - 53
+        print ("O peso ideal para você é: %.2fkg."%p)
+else:
+    print ("Altura inválida")

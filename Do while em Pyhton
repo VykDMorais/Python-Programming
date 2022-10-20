@@ -1,10 +1,10 @@
 """ola, isso serve para comenar em bloco
 hehe"""
 while (True):
-    sexo = input("Qual seu sexo? [M para homens, F para mulheres, N para não especificado]\n")
+    sexo = input("Qual seu sexo? [M para homens, F para mulheres, N para não especificado]: ").upper()
     if sexo == 'N' or sexo == 'F' or sexo == 'M':
         break
-h = float(input("Informe a altura\n"))
+h = float(input("\nInforme a altura\n"))
 if h >= 0.5 and h <=2.2:
     if sexo == 'M':
         p = (72.7*h) - 58

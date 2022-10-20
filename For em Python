@@ -1,0 +1,16 @@
+#exemplo for em python - calculadora de fatorial
+
+n = int(input("Informe um número inteiro\n"))
+f = 1
+
+#primeira maneira
+for i in range (1, n+1, 1): #inicial, final e contador (i = 1; i <= n; i++)
+    f = f*i
+print (f)
+"""
+#segunda maneira
+for i in range (n+1): #inicial, final e contador (i = 1; i <= n; i++)
+    f = f*i
+    if i == 0:
+        f = 1
+print (f)"""

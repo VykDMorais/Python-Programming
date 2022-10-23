@@ -1,1 +1,31 @@
-cu
+while (True):
+    nome = input("Digite seu nome\n")
+    if len(nome) <= 3:
+        print ("Erro, seu nome precisa ter mais de 3 caracteres\n")
+    else:
+        break
+while (True):
+    idade = int(input("Qual sua idade?\n"))
+    if idade >= 0 and idade <= 150:
+        break
+    else:
+        print ("Erro, sua idade precisa ser entre 0 e 150\n")
+while (True):
+    salario = float(input("Qual seu salário?\n"))
+    if salario > 0:
+        print ("Parabéns, você tem um emprego!")
+        break
+    else:
+        print ("Tá desempregado em bobão, foda viu\n")
+        break
+while (True):
+    sexo = input("Qual seu sexo? [Digite F para mulher e M para homem]\n").upper()
+    est = input("Qual seu estado civil [Digite S para solteiro, C para casado, V para viúvo e D para divorciado]\n").upper()
+    if est == 'S':
+        print ("Foda hein, sem nenhum amor\n")
+    print (f"\nNome:{nome}\n")
+    print (f"Idade:{idade}\n")
+    print (f"Salário:{salario}\n")
+    print (f"Sexo:{sexo}\n")
+    print (f"Estado Civil:{est}\n")
+    break

@@ -1,0 +1,12 @@
+qual = int(input("Você deseja acessar o sistema da Panificadora Pão de Ontem ou da Loja Quase Dois?\n[Digite 1 para a loja e 2 para a panificadora]\n"))
+while (True):
+    produto = int(input("Quantos produtos? "))
+    if produto <= 0 and produto > 50:
+        print ("Erro, digite novamente")
+    else:
+        break
+if qual == 1:
+    divida = produto*1.99
+elif qual == 2:
+    divida = produto*0.18
+print (f"Essa pessoa te deve {divida} reais por {produto} produtos")

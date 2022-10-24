@@ -1,0 +1,20 @@
+#Série de Fibonacci
+f = int(input("Qual o termo de parada da Série de Fibonnaci?\n"))
+ultimo = 1
+penultimo = 0 
+print (f"A série de Fibonacci que acaba no {f}º termo é:")
+
+for _ in range (1, f + 1, 1):
+    print (ultimo)
+    conta = ultimo
+    ultimo = ultimo + penultimo
+    penultimo = conta
+
+print ("\nA série de Fibonnaci até um valor maior que 500 é:")
+while (True):
+    print (ultimo)
+    conta = ultimo
+    ultimo = ultimo + penultimo
+    penultimo = conta
+    if penultimo > 500:
+        break

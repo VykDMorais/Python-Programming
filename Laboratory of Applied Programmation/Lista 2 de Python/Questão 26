@@ -1,0 +1,23 @@
+while (True):
+    eleitores = int(input("Quantas pessoas vão votar? "))
+    if eleitores <= 0:
+        print ("Erro, digite novamente")
+    else:
+        break
+a = b = c = vazio = 0
+for i in range (1, eleitores + 1, 1):
+    print ("Cartilha Eleitoral\nPara votar no candidato A, digite 1")
+    print ("Para votar no candidato B, digite 2")
+    print ("Para votar no candidato c, digite 3")
+    print ("Para votar vazio, digite qualquer outra coisa\n")
+    voto = int(input("Digite para votar: "))
+    print ("Voto confirmado :)")
+    if voto == 1:
+        a += 1
+    elif voto == 2:
+        b += 1
+    elif voto == 3:
+        c += 1
+    else:
+        vazio += 1
+print (f"Total de votos:\n{a} votos no candidato A.\n{b} votos no candidato B.\n{c} votos no candidato C.\n{vazio} votos vazios.")

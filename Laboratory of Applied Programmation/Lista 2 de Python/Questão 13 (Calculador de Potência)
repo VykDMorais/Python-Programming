@@ -1,0 +1,3 @@
+n1 = int(input("Digite o número base: "))
+n2 = int(input("\nDigite o número expoente: "))
+print (f"\n{n1} ^ {n2} = {n1**n2}")

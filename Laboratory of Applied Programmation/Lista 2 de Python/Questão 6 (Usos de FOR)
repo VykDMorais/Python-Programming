@@ -1,0 +1,10 @@
+#jeitos diferentes de imprimir usando for
+for i in range (0, 21, 1):
+    print (i, end='')
+    print (', ' if i < 20 else '.', end='')
+print()
+
+print ("\n\n\n\n\n")
+
+for i in range (0, 21, 1):
+    print (f'{i},' if i < 20 else f'{i}.',)

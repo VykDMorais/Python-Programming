@@ -1,0 +1,14 @@
+num = []
+for i in range (1, 6, 1):
+    num.append(float(input("Digite um número: ")))
+maior = num[0]
+cont = 1
+while cont < len(num):
+    if num[cont] > maior:
+        maior = num[cont]
+    cont = cont + 1
+print (f"O maior dos números é: {maior}\n")
+soma = num[0] + num[1] + num[2] + num[3] + num[4] 
+media = soma/5
+print (f"A soma desses números é: {soma}\n")
+print (f"A média desses números é: {media}\n")

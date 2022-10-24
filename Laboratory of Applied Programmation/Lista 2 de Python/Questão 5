@@ -1,0 +1,11 @@
+#Cálculo de taxa de crescimento
+a = int(input("Qual é a população A?\n"))
+ta = float(input("Qual a taxa de crescimento da população A? [Em decimal]\n"))
+b = int(input("Qual é a população B?\n"))
+tb = float(input("Qual a taxa de crescimento da população B? [Em decimal]\n"))
+ano = 0
+while (a <= b):
+    a = a + (a*ta)
+    b = b + (b*tb)
+    ano = ano + 1
+print (f"Levára {ano} anos para que a população A iguale a população B")

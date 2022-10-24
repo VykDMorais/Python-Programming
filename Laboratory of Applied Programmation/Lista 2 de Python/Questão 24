@@ -1,0 +1,8 @@
+quanto = int(input("Quantas notas você quer registrar? "))
+nota = 0
+soma = 0
+for i in range (1, quanto + 1, 1):
+    nota = float(input(f"Digite a {i}ª nota: "))
+    soma = nota + soma
+media = soma/quanto
+print (f"A média aritmética para {quanto} notas é: {media}")

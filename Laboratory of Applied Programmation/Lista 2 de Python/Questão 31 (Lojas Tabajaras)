@@ -1,0 +1,10 @@
+print ("Bem-vinde a tabela de preços da Lojas Tabajara")
+produto = int(input("Quantos produtos você quer registrar? "))
+soma = 0
+for i in range (1, produto + 1, 1):
+    valor = float(input(f"Qual o valor do {i}º produto? "))
+    soma = valor + soma
+print (f"O total é de {soma} reais")
+dinheiro = float(input("Qual o valor fornecido pelo cliente? "))
+troco = dinheiro - soma
+print (f"Você deve fornecer {troco} reais de troco")

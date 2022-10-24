@@ -1,0 +1,17 @@
+while (True):
+    turma = int(input("Quantas turmas? "))
+    if turma <= 0:
+        print ("Erro, digite novamente")
+    else:
+        break
+soma = 0
+for i in range (1, turma + 1, 1):
+    while (True):
+        aluno = int(input(f"Quantos alunos têm na turma {i}? "))
+        if aluno > 40:
+            print ("Erro, digite novamente")
+        else:
+            break
+    soma = soma + aluno
+media = round((soma/turma) + 0.5)
+print(f"A média dos alunos é: {media}")

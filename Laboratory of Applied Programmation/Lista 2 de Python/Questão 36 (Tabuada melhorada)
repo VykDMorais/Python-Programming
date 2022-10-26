@@ -1,0 +1,7 @@
+tabu = int(input("Você quer fazer a tabuada de qual número? "))
+inicio = int(input("Qual o número de início da tabuada? "))
+fim = int(input("Qual o número de fim da tabuada? "))
+result = 0
+for i in range (inicio, fim + 1, 1):
+    result = tabu*i
+    print (f"{tabu} x {i} = {result}")

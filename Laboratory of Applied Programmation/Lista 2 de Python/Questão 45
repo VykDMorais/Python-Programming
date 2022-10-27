@@ -1,0 +1,26 @@
+aluno = 1
+acerto = []
+ponto = 0
+encerra = 'n'
+while (encerra == 'n'):
+    print (f"Bem-vinde, aluno nº {aluno}")
+    ponto = 0
+    for i in range (1, 11, 1):
+        resposta = input(f"Qual a resposta da questão {i}? "). lower()
+        if (i == 1 or i == 10) and resposta == 'a':
+            ponto += 1
+        elif (i == 2 or i == 9) and resposta == 'b':
+            ponto += 1
+        elif (i == 3 or i == 8) and resposta == 'c':
+            ponto += 1
+        elif (i == 4 or i == 7) and resposta == 'd':
+            ponto += 1
+        elif (i == 5 or i == 6) and resposta == 'e':
+            ponto += 1
+    acerto.append (ponto)
+    encerra = input("Você deseja encerrar o programa [S ou N]? ").lower()
+    aluno += 1
+print (f"{aluno - 1} alunos utilizaram o sistema")
+print (f"A média dos alunos foi: {(sum(acerto))/(aluno - 1)}")
+print (f"A menor nota foi a do aluno {(acerto.index(min(acerto)) + 1)}, que foi {min(acerto)}")
+print (f"A maior nota foi a do aluno {(acerto.index(max(acerto)) + 1)}, que foi {max(acerto)}")

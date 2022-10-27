@@ -1,0 +1,23 @@
+primeiro = 0
+segundo = 0
+terceiro = 0
+quarto = 0
+fora = 0
+while (True):
+    print ("Para encerrar o programa, digite um número negativo")
+    num = int(input("Digite um número inteiro: "))
+    if num >= 0 and num <= 25:
+        primeiro += 1
+    elif num >= 26 and num <= 50:
+        segundo += 1
+    elif num >= 51 and num <= 75:
+        terceiro += 1
+    elif num >= 76 and  num <= 100:
+        quarto += 1
+    elif num < 0:
+        break
+    else:
+        fora += 1
+print (f"Você digitou {primeiro} números no intervalo [0, 25]\nVocê digitou {segundo} números no intervalo [26, 50]")
+print (f"Você digitou {terceiro} números no intervalo [51, 76]\nVocê digitou {quarto} números no intervalo [76, 100]")
+print (f"Você digitou {fora} números que não se encaixam em nenhum dos intervalos pré-definidos")

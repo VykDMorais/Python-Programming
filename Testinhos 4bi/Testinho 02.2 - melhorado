@@ -1,0 +1,26 @@
+cod = [0, 0, 0, 0, 0, 0]
+p = [10, 12.5, 14.5, 13, 18, 5]
+a = 0
+while (True):
+    codigo = int(input("Qual o código do pedido? "))
+    quantidade = int(input("Você deseja quantos desses itens? "))
+    if codigo == 100:
+        cod[0] = cod [0] + quantidade
+    elif codigo == 110:
+        cod[1] = cod [1] + quantidade
+    elif codigo == 120:
+        cod[2] = cod [2] + quantidade
+    elif codigo == 130:
+        cod[3] = cod [3] + quantidade
+    elif codigo == 140:
+        cod[4] = cod [4] + quantidade
+    elif codigo == 150:
+        cod[5] = cod [5] + quantidade
+    else:
+        print ("Erro")
+    encerra = input("Você deseja encerrar o programa [S ou N]? ").lower()
+    if encerra == 's':
+        break
+for i in range (100, 150 + 10, 10):
+    print (f"Código: {i} * {p[a]} = {cod[a]*p[a]}")
+    a += 1

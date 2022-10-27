@@ -1,0 +1,30 @@
+cod0 = 0
+cod1 = 0
+cod2 = 0
+cod3 = 0
+cod4 = 0
+cod5 = 0
+while (True):
+    codigo = int(input("Qual o código do pedido? "))
+    quantidade = int(input("Você deseja quantos desses itens? "))
+    if codigo == 100:
+        cod0 = quantidade
+    elif codigo == 110:
+        cod1 = quantidade
+    elif codigo == 120:
+        cod2 = quantidade
+    elif codigo == 130:
+        cod3 = quantidade
+    elif codigo == 140:
+        cod4 = quantidade
+    elif codigo == 150:
+        cod5 = quantidade
+    else:
+        print ("Erro")
+    encerra = input("Você deseja encerrar o programa [S ou N]? ").lower()
+    if encerra == 's':
+        break
+print (f"Código 100: {cod0} * 10 = {cod0*10}")
+print (f"Código 110: {cod1} * 12.5 = {cod1 *12.5}")
+print (f"Código 120: {cod2} * 14.5 = {cod2 *14.5}")
+print (f"Código 130: {cod3} * 13 = {cod3 *13}")

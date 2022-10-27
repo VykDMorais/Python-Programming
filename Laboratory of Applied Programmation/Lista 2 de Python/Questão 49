@@ -1,0 +1,8 @@
+n = int(input("Digite o numerador: "))
+print (f"S = 1/1 +")
+d = 3
+for i in range (2, n + 1, 1):
+    print (f"S = {i}/{d} + ")
+    S = i/(i + 2)
+    d += 2
+print (S)

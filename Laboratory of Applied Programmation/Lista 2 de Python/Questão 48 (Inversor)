@@ -1,0 +1,2 @@
+num = input("Digite um número: ")
+print(f"O número invetido é: {num[::-1]}")

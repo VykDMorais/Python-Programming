@@ -1,0 +1,23 @@
+while (True):
+    print ("Relação parcelas-juros em porcentagem\n1 -> 0\n3 -> 10\n6 -> 15\n9 -> 20\n12 -> 25")
+    divida = float(input("Qual o valor da dívida? "))
+    parcela = int(input("Em quantas parcelas vai ser pago? "))
+    valor = 0
+    if parcela == 1:
+        valor = divida
+        break
+    elif parcela == 3:
+        valor =  (divida*1.1)/parcela
+        break
+    elif parcela == 6:
+        valor =  (divida*1.15)/parcela
+        break
+    elif parcela == 9:
+        valor =  (divida*1.2)/parcela
+        break
+    elif parcela == 12:
+        valor =  (divida*1.25)/parcela
+        break
+    else:
+        print ("Erro, valor inválido para as parcelas")
+print (f"Você deverá {parcela} parcelas de R${valor}")

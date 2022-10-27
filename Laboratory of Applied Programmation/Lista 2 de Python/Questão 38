@@ -1,1 +1,7 @@
-
+salario = int(input("Qual é seu salário? "))
+tempo = int(input("Considerando que no primeiro ano houve um acréscimo de 1.5% e que o percentual dobra a cada ano, você quer descobrir seu salário de quantos anos no futuro? "))
+percent = 0.015
+salario = salario + (salario*percent)
+for i in range (1, tempo + 1, 1):
+    salario = salario + (salario*(2*percent))
+print (f"Seu salário final será {salario}")

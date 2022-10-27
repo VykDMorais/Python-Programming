@@ -1,41 +1,26 @@
-https://github.com/go4Mor4/Exericios-resolvidos_Estrutura-de-repeticao/blob/master/Lista3_37.py
-
-codigo = 0
-cliente = []
+cliente = 1
 altura_c = []
 peso_c = []
-num_c = 1
-cont = 0
+cod = []
+
 while (True):
-    print (f"Olá cliente nº {num_c}")
+    print (f"Bem-vinde, cliente nº {cliente}")
     codigo = int(input("Qual seu código? "))
     if codigo == 0:
         break
-    else:
-        altura = float(input("Qual sua altura? "))
-        peso = float(input("Qual seu peso? "))
-        cliente.append(codigo)
-        altura_c.append(altura)
-        peso_c.append(peso)
-        num_c += 1
-gordo = peso_c [0]
-magro = peso_c [0]
-alto = altura_c [0]
-baixo = altura_c [0]
-while cont < num_c:
-    if peso_c[cont] > gordo:
-        gordo = peso_c[cont]
-    elif peso_c[cont] < magro:
-        magro = peso_c[cont]
-    elif altura_c[cont] > alto:
-        alto = altura_c[cont] 
-    elif altura_c[cont] < baixo:
-        baixo = altura_c[cont]     
-    cont = cont + 1
-
-print (f"Cliente mais gordo: {gordo}. O código dele é ")
-print (f"Cliente mais magro: {magro}. O código dele é ")
-print (f"Cliente mais alto: {alto}. O código dele é ")
-print (f"Cliente mais baixo: {baixo}. O código dele é ")
-print("Média de altura: ", sum(altura_c) / len(altura_c))
-print("Média de peso: ", sum(peso_c) / len(peso_c))
+    altura = float(input("Qual sua altura? "))
+    peso = float(input("Qual seu peso? "))
+    altura_c.append (altura)
+    peso_c.append (peso)
+    cod.append (codigo)
+    cliente += 1
+cod_magro = peso_c.index(min(peso_c))
+cod_gordo = peso_c.index(max(peso_c))
+cod_alto = altura_c.index(max(altura_c))
+cod_baixo = altura_c.index(min(altura_c))
+print (f"A média das alturas é: {(sum(altura_c))/(cliente - 1)}")
+print (f"A média dos pesos é: {(sum(peso_c))/(cliente - 1)}")
+print (f"A pessoa mais gorda é o cliente nº {(peso_c.index(max(peso_c))) + 1}, com {max(peso_c)}. Seu código é {cod[cod_gordo]}")
+print (f"A pessoa mais magra é o cliente nº {(peso_c.index(min(peso_c))) + 1}, com {min(peso_c)}. Seu código é {cod[cod_magro]}")
+print (f"A pessoa mais alta é o cliente nº {(altura_c.index(max(altura_c))) + 1}, com {max(altura_c)}. Seu código é {cod[cod_alto]}")
+print (f"A pessoa mais baixa é o cliente nº {(altura_c.index(min(altura_c))) + 1}, com {min(altura_c)}. Seu código é {cod[cod_baixo]}")

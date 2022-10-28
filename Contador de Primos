@@ -1,0 +1,35 @@
+while (True):
+    infinito = input("Você deseja que o programa opere infinitamente [S ou N]? "). lower()
+    if infinito == 's':
+        break
+    elif infinito == 'n':
+        num = int(input("Qual o número que você quer? "))
+        if num > 2:
+            break
+print ("2")
+lim = 3
+mult = 0
+div = 0
+primo = [2]
+if infinito == 'n':
+    while (lim <= num):
+        mult = 0
+        for count in range (3, lim):
+            div += 1
+            if (lim%count == 0):
+                mult += 1
+        if mult == 0:
+            primo.append(lim)
+        lim = lim + 2
+    print (primo)
+    print (f"Foram necessárias {div} divisões")
+else:
+    while (lim > 2):
+        mult = 0
+        for count in range (3, lim):
+            if (lim%count == 0):
+                mult += 1
+        if mult == 0:
+            print (lim)
+        lim = lim + 2
+input()

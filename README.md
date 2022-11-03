@@ -33,9 +33,16 @@ This is my README, so, i will tell you some facts about me!
 
 ### My repositories:
 https://github.com/VykDMorais/VykDMorais
-https://github.com/VykDMorais/CEFET-s-integrated-mechatronics---C-Programming
-https://github.com/VykDMorais/CEFET-s-integrated-mechatronics---Python-Programming
+
+https://github.com/VykDMorais/C-Programming-and-C-Plus-Plus-Programming
+
+https://github.com/VykDMorais/Python-Programming
+
+https://github.com/VykDMorais/JavaScript-Programming-and-HTML-Struct-and-CSS-Mechanism
+
+https://github.com/VykDMorais/C-Sharp-Programming-and-Java-Programming
 
 ### Some sources:
 C Programming: https://github.com/VykDMorais/VykDMorais/files/9847808/introducao_c_renatocm_deeufmg.1.pdf
+
 Python Programming: https://github.com/VykDMorais/VykDMorais/files/9847807/Apostila_Allan_Python.1.pdf

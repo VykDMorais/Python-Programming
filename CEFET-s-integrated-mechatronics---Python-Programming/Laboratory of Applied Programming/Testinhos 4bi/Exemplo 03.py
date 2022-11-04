@@ -28,7 +28,7 @@ def divisor (num, den):
 
 def tup (*args):# * -> pode ter qualquer tamanho
 #def fun(a, b, c, *args)
-    for i in (args):#quando n é int, tem que tirar o range
+    for i in (args):#quando não é int, tem que tirar o range
         if i > 5:
             print (i)
     print (args) #retorna em tuple

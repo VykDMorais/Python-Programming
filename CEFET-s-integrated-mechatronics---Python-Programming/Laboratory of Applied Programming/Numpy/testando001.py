@@ -1,0 +1,15 @@
+import numpy as np
+x = np.array([1, 2, 3])
+y = np.array([[1., 0., 1.1], [0., 1., 2.]], dtype = np.float64)
+print (x)
+print (y)
+print(type(x))
+z = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print (z[1])
+print (z[0][2])
+print (z.shape)
+w = np.array([[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]], [[13, 14, 15, 16], [17, 18, 19, 20], [21, 22, 23, 24]]])
+print (w)
+print(w.shape) #2 linhas, 3 colunas e cada coluna 4 elementos
+w.shape = (3, 8)
+print (w)
